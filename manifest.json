@@ -1,7 +1,7 @@
 {
-  "name": "PWAmp music player",
-  "short_name": "PWAmp",
-  "description": "A skinable music player app to play your favorite mp3 files",
+  "name": "Shade Music",
+  "short_name": "Shade Music",
+  "description": "Your new music app to discover new music and to store your favourite ones.",
   "lang": "en-US",
   "start_url": "./",
   "scope": "./",
