@@ -16,23 +16,11 @@
   },
   "icons": [
     {
-      "src": "./favicon-48.png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "./favicon-96.png",
-      "sizes": "96x96"
-    },
-    {
-      "src": "./favicon-128.png",
-      "sizes": "128x128"
-    },
-    {
-      "src": "./favicon-256.png",
+      "src": "./InShot_20230811_174529776.png",
       "sizes": "256x256"
     },
     {
-      "src": "./favicon-512.png",
+      "src": "./InShot_20230811_174529776.png",
       "sizes": "512x512"
     }
   ],
@@ -41,18 +29,18 @@
       "src": "./screenshot-playlist.png",
       "sizes": "1280x720",
       "platform": "wide",
-      "label": "The main PWAmp user interface, showing a list of songs, and playback buttons."
+      "label": "The main Shade Music user interface, showing a list of songs, and playback buttons."
     },
     {
       "src": "./screenshot-visualizer.png",
       "sizes": "1280x720",
       "platform": "wide",
-      "label": "The PWAmp visualizer, showing the current song, the playback buttons, and a colorful visualization of the current song."
+      "label": "The Shade Music visualizer, showing the current song, the playback buttons, and a colorful visualization of the current song."
     },
     {
       "src": "./screenshot-widget.png",
       "sizes": "600x400",
-      "label": "The PWAmp mini-player widget"
+      "label": "The Shade Music mini-player widget"
     }
   ],
   "file_handlers": [
