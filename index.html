@@ -5,7 +5,7 @@
     <style>
     .circle-popup {
       position: fixed;
-      bottom: 100px;
+      bottom: 150px;
       left: 30px;
       width: 50px;
       height: 50px;
@@ -20,7 +20,7 @@
 
     .chat-icon {
     position: fixed;
-      bottom: 100px;
+      bottom: 150px;
       left: 30px;
       width: 50px;
       height: 50px;
@@ -84,22 +84,22 @@
 }
 
 #search-input {
-  left: 10px;
-        right: 10px;
+  left: 5px;
+        right: 5px;
         height: 10%;
         width: 100%;
       background: var(--back);
   color: var(--text);
-  display: grid;
+  display: box;
   grid-template-rows: auto 1fr auto auto;
     background-color: #ffbb50;
     border-radius: 4px;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     display: sticky;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
+    position: sticky;
 }
 
 #search-input::placeholder {
@@ -207,22 +207,7 @@
         <span id="duration">00:00</span>
       </div>
     </section>
-    <form id="search-form">
-      <input type="text" id="search-input" placeholder="Search...">
-      <input type="submit" value="" id="submit">
-  </form>
-
-  <script>
-      document.getElementById('search-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          
-          const searchInput = document.getElementById('search-input').value;
-          const encodedSearchInput = encodeURIComponent(searchInput);
-          const searchUrl = `https://mp3paw.app/mp3-download/${encodedSearchInput}`;
-          
-          window.location.href = searchUrl;
-      });
-  </script>
+   
     <section class="playlist">
       <p class="empty-playlist">
         No songs in playlist, drag songs here or click <strong>+</strong>
@@ -315,16 +300,14 @@
       <div class="screenshot"></div>
       <img class="logo" src="./favicon-128.png" alt="The PWAmp logo" />
       <section class="about">
-        <h1>PWAmp</h1>
-        <h2>The Progressive Web Amp</h2>
+        <h1>Shade Music</h1>
+        <h2>From Shade Software</h2>
         <p>
           Listen to your favorite local song files, play online songs, share
           with friends, customize the app, and more...
         </p>
         <p>
-          PWAmp is a simple audio player app for the web, and desktop operating
-          systems. It is built with HTML, CSS, JavaScript, and Progressive Web
-          App features.
+          Shade Music is a cloud optimised music player, powered by the Inline Magic Technology.
         </p>
       </section>
       <form class="actions" method="dialog">
@@ -349,7 +332,7 @@
     <div class="chat-icon">🪄</div>
     <div class="popup-content">
               
-      <iframe id="popup-iframe" src="https://mp3hunters.com/" sandbox></iframe>
+      <iframe id="popup-iframe" src="./search.html"></iframe>
     </div>
   </div>
 <script>
