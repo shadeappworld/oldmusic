@@ -3,6 +3,15 @@
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4R0WR1V33"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4R0WR1V33');
+</script>
   <html lang="en-us"></html> <meta charset="utf-8" />
   <title>Shade Music Plus</title>
   <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet" />
@@ -83,12 +92,12 @@
     
     </div>
  
-  <script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-  }
-</script>
-
+  
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+      }
+    </script>
      
 </body>
 
