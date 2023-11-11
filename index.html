@@ -1,8 +1,7 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
+  <head> 
+     <style>
     .circle-popup {
       position: fixed;
       bottom: 0px;
@@ -146,7 +145,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shade Music</title>
+    <title>pwamp</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="manifest.json" />
@@ -191,7 +190,13 @@
         >
           <span>Next</span>
         </button>
-       
+        <button
+          class="main-button"
+          id="toggle-visualizer"
+          title="Show visualizer (V)"
+        >
+          <span>Show visualizer</span>
+        </button>
       </div>
 
       <div class="playhead-control">
@@ -205,12 +210,21 @@
         <span id="duration">00:00</span>
       </div>
     </section>
+
     <section class="playlist">
       <p class="empty-playlist">
         No songs in playlist, drag songs here or click <strong>+</strong>
       </p>
       <ol class="songs"></ol>
     </section>
+
+    <section class="current-song"></section>
+
+    <section class="volume">
+      <label for="volume">Volume</label>
+      <input type="range" id="volume" min="0" max="10" value="10" />
+    </section>
+
     <section class="app-controls">
       <button
         class="main-button"
@@ -219,7 +233,13 @@
       >
         <span>Add new songs</span>
       </button>
-      
+      <button
+        class="main-button"
+        id="load-custom-skin"
+        title="Apply a custom skin"
+      >
+        <span>Apply a custom skin</span>
+      </button>
       <button
         class="main-button"
         id="record-audio"
@@ -279,28 +299,20 @@
       </button>
     </div>
 
-    
-
-    <section class="current-song"></section>
-
-    <section class="volume">
-      <label for="volume">Volume</label>
-      <input type="range" id="volume" min="0" max="10" value="10" />
-    </section>
-
-    
     <dialog id="about-dialog">
       <div class="screenshot"></div>
       <img class="logo" src="./favicon-128.png" alt="The PWAmp logo" />
       <section class="about">
-        <h1>Shade Music</h1>
-        <h2>From Shade Software</h2>
+        <h1>PWAmp</h1>
+        <h2>The Progressive Web Amp</h2>
         <p>
           Listen to your favorite local song files, play online songs, share
           with friends, customize the app, and more...
         </p>
         <p>
-          Shade Music is a cloud optimised music player, powered by the Inline Magic Technology.
+          PWAmp is a simple audio player app for the web, and desktop operating
+          systems. It is built with HTML, CSS, JavaScript, and Progressive Web
+          App features.
         </p>
       </section>
       <form class="actions" method="dialog">
@@ -321,7 +333,7 @@
         navigator.serviceWorker.register("./sw.js");
       }
     </script>
-        <div class="circle-popup">
+    <div class="circle-popup">
     <div class="chat-icon">Access your downloaded songs here 🪄</div>
     <div class="popup-content">
               
@@ -342,9 +354,6 @@
     // Add event listeners to the elements
     circlePopup.addEventListener('click', togglePopup);
     closeBtn.addEventListener('click', togglePopup);
-  </script>
-  <script>
-      
   </script>
   </body>
 </html>
