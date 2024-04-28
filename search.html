@@ -155,7 +155,7 @@
 
 <body>
     <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search...">
+        <input type="text" id="search-input" placeholder="Search for videos...">
         <input type="submit" value="" id="submit">
     </form>
 
@@ -165,7 +165,7 @@
 
             const searchInput = document.getElementById('search-input').value;
             const encodedSearchInput = encodeURIComponent(searchInput);
-            const searchUrl = `https://mp3paw.app/mp3-download/${encodedSearchInput}`;
+            const searchUrl = `https://app-one-umber.vercel.app/results?search_query=${encodedSearchInput}`;
 
             window.location.href = searchUrl;
         });
